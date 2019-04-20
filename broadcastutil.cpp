@@ -66,7 +66,7 @@ void BroadcastUtil::process()
   datagram.append((char)0x00);
 
   datagram.append(DISCOVERY_PROTOCOL_VERSION);
-  datagram.append("2.0.0.3");
+  datagram.append("3.0.0.1");
   datagram.append((char)0x20);
 
   datagram.append(MODEL);
@@ -78,7 +78,7 @@ void BroadcastUtil::process()
   datagram.append((char)0x20);
 
   datagram.append(VERSION);
-  datagram.append("2.4.9.115");
+    datagram.append("3.0.19.119");
   datagram.append((char)0x20);
 
   datagram.append(NICKNAME);
@@ -108,7 +108,7 @@ void BroadcastUtil::process()
   datagram.append((char)0x20);
 
   datagram.append(MAX_LICANSED_VERSION);
-  datagram.append("v2");
+  datagram.append("v3");
   datagram.append((char)0x20);
 
   datagram.append(RADIO_LICANSE_ID);
@@ -123,8 +123,27 @@ void BroadcastUtil::process()
   datagram.append((char)0x20);
 
   datagram.append(WAN_CONNECTED);
-  datagram.append("0");
+  datagram.append("1");
   datagram.append((char)0x20);
+
+  datagram.append("licensed_clients=2");
+  datagram.append((char)0x20);
+
+  datagram.append("available_cli ents=2");
+  datagram.append((char)0x20);
+
+  datagram.append("max_panad apters=2");
+  datagram.append((char)0x20);
+
+  datagram.append("availab le_panadapters=2");
+  datagram.append((char)0x20);
+
+  datagram.append("max_slices=2");
+  datagram.append((char)0x20);
+
+  datagram.append("av ailable_slices=2");
+  datagram.append((char)0x20);
+
 
   //end zero
   datagram.append((char)0x00);
